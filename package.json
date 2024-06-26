@@ -1,5 +1,6 @@
 {
   "name": "markdown-nice",
+  "homepage": "https://531014023.github.io/dy_mdnice",
   "author": "mdnice",
   "description": "a markdown editor with the function of style edition",
   "version": "1.6.12",
@@ -21,7 +22,9 @@
     "analyze": "source-map-explorer build/static/js/*.js",
     "lint": "eslint src --ext ts,tsx,js --fix",
     "publish:npm": "cross-env NODE_ENV=production && rm -rf lib && mkdir lib && cross-env BABEL_ENV=production npx babel src --out-dir lib --copy-files",
-    "storybook": "npm run publish:npm && start-storybook -p 9001 -c .storybook"
+    "storybook": "npm run publish:npm && start-storybook -p 9001 -c .storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@sitdown/juejin": "^1.1.1",
@@ -87,6 +90,7 @@
     "file-loader": "2.0.0",
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.1",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "husky": "^3.0.7",
     "identity-obj-proxy": "3.0.0",
