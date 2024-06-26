@@ -74,7 +74,7 @@ export default `/*自定义样式，实时生效*/
   
   #nice h2 .prefix:before {
     counter-increment: counterh2;
-    content: counter(counterh2); 
+    content: counter(counterh1)"."counter(counterh2); 
     color:rgb(37,132,181);
     border-bottom: 4px solid rgb(37,132,181);
     font-size: 18px;
