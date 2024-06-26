@@ -21,7 +21,7 @@ export default `/*自定义样式，实时生效*/
    * 首行缩进 text-indent: 2em;
    */
   #nice p {
-    
+    text-indent: 2em;
   }
   
   /* 一级标题 */
@@ -282,6 +282,7 @@ export default `/*自定义样式，实时生效*/
   
   /* 参考资料文字 */
   #nice .footnote-item p { 
+    text-indent: 0em;
   }
   
   /* 参考资料解释 */
