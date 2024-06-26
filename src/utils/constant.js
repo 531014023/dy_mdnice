@@ -49,6 +49,20 @@ export const TEMPLATE_OPTIONS = [
     author: "zhning12",
   },
   {
+    id: "yanqihu",
+    name: "雁栖湖",
+    author: "大鹏",
+    /**
+     * 作者原文
+     * https://mp.weixin.qq.com/s/bCDv3zI85qO8Gu9H9v5pag
+     * */
+  },
+  {
+    id: "rose_custom",
+    name: "蔷薇紫自定义",
+    author: "self",
+  },
+  {
     id: "shanchui",
     name: "山吹",
     author: "ElyhG",

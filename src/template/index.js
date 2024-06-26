@@ -18,6 +18,9 @@ import rose from "./markdown/rose";
 import cuteGreen from "./markdown/cuteGreen";
 import fullStackBlue from "./markdown/fullStackBlue";
 
+import yanqihu from "./markdown/yanqihu";
+import rose_custom from "./markdown/rose_custom";
+
 import nightPurple from "./markdown/nightPurple";
 import extremeBlack from "./markdown/extremeBlack";
 
@@ -42,6 +45,8 @@ import basic from "./basic";
 export default {
   basic,
   style: {
+    yanqihu,
+    rose_custom,
     blue,
     blueMountain,
     blueCyan,
