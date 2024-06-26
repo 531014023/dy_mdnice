@@ -19,7 +19,7 @@
 目前内置原版所有主题，可在编辑器页面顶部主题菜单中查看，如下所示：
 
 - 默认主题 `@zhning12`
-- 雁栖湖 `@大鹏`
+- [雁栖湖](https://mp.weixin.qq.com/s/bCDv3zI85qO8Gu9H9v5pag) `@大鹏`
 - 蔷薇紫自定义 `@duyong`
 - 山吹 `@ElyhG`
 - [蔷薇紫](https://mp.weixin.qq.com/s/x0xqSpQixW2xj5qXCgWSyA) `@HeyRain`
