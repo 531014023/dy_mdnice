@@ -22,8 +22,8 @@
     "lint": "eslint src --ext ts,tsx,js --fix",
     "publish:npm": "cross-env NODE_ENV=production && rm -rf lib && mkdir lib && cross-env BABEL_ENV=production npx babel src --out-dir lib --copy-files",
     "storybook": "npm run publish:npm && start-storybook -p 9001 -c .storybook",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d docs" 
   },
   "dependencies": {
     "@sitdown/juejin": "^1.1.1",
