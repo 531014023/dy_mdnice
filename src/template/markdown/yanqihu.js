@@ -1,10 +1,12 @@
-export default `/* 全局属性
+export default `/*自定义样式，实时生效*/
+
+/* 全局属性
  * 页边距 padding: 30px;
  * 全文字体 font-family: ptima-Regular;
  * 英文换行 word-break: break-all;
  */
 #nice {
-    counter-reset: counterh1 counterh2 counterh3;
+    counter-reset: counterh1;
   }
   
   /* 段落，下方未标注标签参数均同此处
@@ -19,12 +21,14 @@ export default `/* 全局属性
    * 首行缩进 text-indent: 2em;
    */
   #nice p {
+    
   }
   
   /* 一级标题 */
   #nice h1 {
     line-height: 28px;
     border-bottom: 1px solid rgb(37,132,181);
+    counter-reset: counterh2;
   }
   
   #nice h1:before {
@@ -52,13 +56,14 @@ export default `/* 全局属性
   
   /* 二级标题 */
   #nice h2 {
+   counter-reset: counterh3;
   }
   
   /* 二级标题内容 */
   #nice h2 .content {
     font-size: 18px;
-    border-left: 6px solid rgb(37,132,181);
-    padding: 0px 10px;
+    border-bottom: 4px solid rgb(37,132,181);
+    padding: 2px 8px;
     color: rgb(37,132,181);
   }
   
@@ -68,10 +73,10 @@ export default `/* 全局属性
   }
   
   #nice h2 .prefix:before {
-    //counter-increment: counterh2;
-    //content: counter(counterh2); 
-    color:rgb(159,205,208);
-    border-bottom: 4px solid rgb(159,205,208);
+    counter-increment: counterh2;
+    content: counter(counterh2); 
+    color:rgb(37,132,181);
+    border-bottom: 4px solid rgb(37,132,181);
     font-size: 18px;
     padding: 2px 4px;
   }
@@ -82,6 +87,7 @@ export default `/* 全局属性
   
   /* 三级标题 */
   #nice h3 {
+    
   }
   
   /* 三级标题内容 */
