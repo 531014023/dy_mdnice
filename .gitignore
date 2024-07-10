@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+!/node_modules/juice/lib/inline.js
+!/node_modules/juice/lib/numbers.js
+!/node_modules/juice/lib/variables.js
 /.pnp
 .pnp.js
 
