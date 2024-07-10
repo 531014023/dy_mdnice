@@ -295,18 +295,21 @@ module.exports = function(webpackEnv) {
               loader: require.resolve("babel-loader"),
               options: {
                 customize: require.resolve("babel-preset-react-app/webpack-overrides"),
+                presets: ['@babel/preset-env'],
 
                 plugins: [
-                  [
-                    require.resolve("babel-plugin-named-asset-import"),
-                    {
-                      loaderMap: {
-                        svg: {
-                          ReactComponent: "@svgr/webpack?-svgo![path]",
-                        },
-                      },
-                    },
-                  ],
+                  // [
+                  //   require.resolve("babel-plugin-named-asset-import"),
+                  //   {
+                  //     loaderMap: {
+                  //       svg: {
+                  //         ReactComponent: "@svgr/webpack?-svgo![path]",
+                  //       },
+                  //     },
+                  //   },
+                  // ],
+                  ["@babel/plugin-transform-private-property-in-object",{"loose": true}],
+                  ["@babel/plugin-transform-private-methods", { "loose": true }],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/

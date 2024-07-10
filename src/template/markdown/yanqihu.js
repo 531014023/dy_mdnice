@@ -1,5 +1,7 @@
 export default `/*自定义样式，实时生效*/
 
+/*自定义样式，实时生效*/
+
 /* 全局属性
  * 页边距 padding: 30px;
  * 全文字体 font-family: ptima-Regular;
@@ -28,7 +30,6 @@ export default `/*自定义样式，实时生效*/
   #nice h1 {
     line-height: 28px;
     border-bottom: 1px solid rgb(37,132,181);
-    counter-reset: counterh2;
   }
   
   #nice h1:before {
@@ -56,29 +57,22 @@ export default `/*自定义样式，实时生效*/
   
   /* 二级标题 */
   #nice h2 {
-   counter-reset: counterh3;
   }
   
   /* 二级标题内容 */
   #nice h2 .content {
     font-size: 18px;
-    border-bottom: 4px solid rgb(37,132,181);
-    padding: 2px 8px;
+    border-left: 6px solid rgb(37,132,181);
+    padding: 2px 6px;
     color: rgb(37,132,181);
   }
   
   /* 二级标题前缀 */
-  #nice h2 .prefix {
-    display: inline-block;
+  #nice h2:before {
   }
   
   #nice h2 .prefix:before {
-    counter-increment: counterh2;
-    content: counter(counterh1)"."counter(counterh2); 
-    color:rgb(37,132,181);
-    border-bottom: 4px solid rgb(37,132,181);
-    font-size: 18px;
-    padding: 2px 4px;
+    
   }
   
   /* 二级标题后缀 */
